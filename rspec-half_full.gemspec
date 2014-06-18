@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/taw/rspec-half_full'
   s.licenses      = ['MIT']
 
-  s.files            = Dir.glob('lib/**/*')
+  s.files            = Dir.glob('lib/**/*') + ['Rakefile']
   s.test_files       = Dir.glob('spec/**/*')
-  # s.extra_rdoc_files = ['README.markdown']
+  # s.extra_rdoc_files = ['README.md']
 
   s.add_dependency 'rspec',  ['~> 2.14']
 end

@@ -1,2 +1,3 @@
 --color
+--require rspec/half_full
 --format RSpec::HalfFull

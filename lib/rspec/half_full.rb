@@ -1,4 +1,5 @@
-require 'rspec/core/formatters/base_text_formatter'
+require "rspec/core/formatters/base_text_formatter"
+require "rspec/legacy_formatters"
 
 module RSpec
   class HalfFull < RSpec::Core::Formatters::BaseTextFormatter
@@ -28,7 +29,7 @@ module RSpec
     end
 
     def dump_failure_info(example)
-      exception = example.execution_result[:exception]
+      exception = example.execution_result.exception
       exception_class_name = exception_class_name_for(exception)
       output.puts "#{long_padding}#{failure_color("Future Success:")} #{failure_color(read_failed_line(exception, example).strip)}"
       output.puts "#{long_padding}#{failure_color(exception_class_name)}:" unless exception_class_name =~ /RSpec/

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = "rspec-half_full"
-  s.version = "0.20140618"
+  s.version = "0.20160506"
 
   s.summary       = "There are no failed specs"
   s.description   = "RSpec reporter for incorrigible optimists"
@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.test_files       = Dir.glob("spec/**/*")
   s.extra_rdoc_files = ["README.md"]
 
-  s.add_dependency "rspec",  ["~> 2.14"]
+  s.add_dependency "rspec",  "~> 3.4"
+  s.add_dependency "rspec-legacy_formatters"
   s.add_development_dependency "rake"
 end

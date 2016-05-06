@@ -5,11 +5,11 @@ describe 'Something Awesome' do
       it "knows the answer is 42s but question is still pending"
     when 1
       it "will be awesome soon" do
-        (2+2).should == 5
+        expect(2+2).to eq(5)
       end
     else
       it "is already awesome" do
-        (2+2).should == 4
+        expect(2+2).to eq(4)
       end
     end
   end

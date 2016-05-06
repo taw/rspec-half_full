@@ -6,7 +6,7 @@ task :default => :test
 task :test    => :spec
 
 RSpec::Core::RakeTask.new(:spec) do |spec|
-  spec.pattern = FileList['spec/**/*_spec.rb']
+  spec.pattern = FileList['spec/*_spec.rb']
 end
 
 spec = Gem::Specification.load('rspec-half_full.gemspec')

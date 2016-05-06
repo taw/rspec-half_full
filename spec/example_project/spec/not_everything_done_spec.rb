@@ -1,5 +1,3 @@
-require "rspec/half_full"
-
 describe 'Something Awesome' do
   100.times do |i|
     case i % 10
